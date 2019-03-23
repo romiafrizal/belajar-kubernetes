@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-contoh
+spec:
+  containers:
+  - name: ubuntu
+    image: ubuntu:trusty
+    resources:
+      limits:
+        memory: "200Mi"
+      requests:
+        memory: "100Mi"
+    command: ["echo"]
+    args: ["Hello-World"]
