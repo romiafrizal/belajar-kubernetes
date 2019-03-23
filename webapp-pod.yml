@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: pod-contoh
+  name: webapp
 spec:
   containers:
   - name: ubuntu
