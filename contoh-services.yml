@@ -6,6 +6,7 @@ spec:
   selector:
   # ini berdasarkan Label pada Pods
     app: webapp
+    release: 0-5
   ports:
     - name: http
       port: 80
