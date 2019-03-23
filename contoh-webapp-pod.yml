@@ -6,12 +6,7 @@ metadata:
     app: webapp
 spec:
   containers:
-  - name: ubuntu
-    image: ubuntu:trusty
-    resources:
-      limits:
-        memory: "200Mi"
-      requests:
-        memory: "100Mi"
+  - name: webapp
+    image: richardchesterwood/k8s-fleetman-webapp-angular
     command: ["echo"]
     args: ["Hello-World"]
