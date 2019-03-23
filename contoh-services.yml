@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fleetman-webapp
+spec:
+  selector:
+  # ini berdasarkan Label pada Pods
+    app: webapp
+  ports:
+    - name: http
+      port: 80
+      nodePort: 30080
+      
+      #targetPort: 80
+  type: nodePort
+#type: LoadBalacer
+# LoadBlancer Hanya untuk cloud provider, untuk local bisa pakai ClusterIP(tidak terekspose), atau NodePort (expose).
